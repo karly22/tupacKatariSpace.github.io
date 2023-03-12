@@ -31,7 +31,7 @@ li{
 main{
     display: flex;
     justify-content: space-around;
-    padding: 4rem 2rem 0 2rem;
+    padding: 2.5rem 2rem 0 2rem;
 }
 
 
@@ -86,6 +86,25 @@ a{
     text-decoration: none;
     color: #6b1818;
 }
+footer{
+    margin-top: 2rem;
+}
+
+.footer-icon{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+i{
+    color: white;
+    cursor: pointer;
+}
+p{
+    text-align: center;
+    margin-top: 2rem;
+    color: white;
+}
+
 button:hover{
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,0,84,1) 0%, rgba(59,137,255,1) 85%);
     color: white;
