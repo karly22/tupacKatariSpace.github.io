@@ -1,13 +1,14 @@
 body{
-    background-color: #1b4f8f;
+    background-color: #6b1818;
 }
 .header{
-    background: lightcyan;
+    background: white;
     padding: 1rem;
 }
 .nav-menu{
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 .icon{
@@ -22,17 +23,22 @@ body{
 li{
     list-style: none;
     cursor: pointer;
+    background: #6b1818;
+    padding: .4rem 1rem;
+    border-radius: 1rem;
+    color: white;
 }
 main{
     display: flex;
     justify-content: space-around;
-    padding: 4rem 2rem;
+    padding: 4rem 2rem 0 2rem;
 }
 
+
 article{
-    
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
 }
 .satelite{
     width: 400px;
@@ -49,6 +55,7 @@ form{
 label{
     text-align: center;
     font-size: 36px;
+    color: white;
 }
 input{
     padding: .2rem 2rem;
@@ -58,14 +65,68 @@ input{
     cursor: pointer;
 }
 
+.register{
+    width: 200px;
+    margin: -1rem auto 0 auto;
+    color: white;
+    background-color: #6b1818;
+    border: 1px solid white;
+}
+
 button{
     border-radius: 2rem;
     border: none;
-    margin: 2rem auto;
-    padding: .2rem 2rem;
-
+    margin: .5rem auto;
+    padding: .5rem 3rem;
+    display: flex;
+    align-items: center;
 }
 a{
-    font-size: 22px;
+    font-size: 32px;
     text-decoration: none;
+    color: #6b1818;
 }
+button:hover{
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,0,84,1) 0%, rgba(59,137,255,1) 85%);
+    color: white;
+}
+a:hover{
+    color: white;
+}
+
+@media (max-width: 825px) {
+    body {
+      background: rgba(136, 15, 15, 0.563);
+    }
+    header{
+        border-radius: 1rem;
+    }
+    main{
+        flex-direction: column;
+        padding: 0;
+    }
+    .satelite{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        width: 200px;
+        height: 250px;
+    }
+    form{
+        gap: .5rem;
+        padding: 0;
+    }
+    label{
+        font-size: 24px;
+    }
+    .register{
+        margin-top: 2rem;
+    }
+    button{
+        margin-top: 2rem;
+    }
+    a{
+        font-size: 22px;
+    }
+  }
